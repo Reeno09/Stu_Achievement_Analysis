@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1031</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:transparent;
+background-color:white;
+QScrollBar {height:0px;width:0px;}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>3820</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>871</width>
+      <height>3820</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:40px;font:bold;</string>
+     </property>
+     <property name="text">
+      <string>分析展示</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="HeatmapLable">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>119</y>
+       <width>891</width>
+       <height>801</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(245,245,245);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>考研热力图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PGEHTMTEXT">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>930</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>考研相关要素热力图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SAHeatmapLable">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>970</y>
+       <width>461</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(245,245,245);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>出国留学热力图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="DHeatmapLable">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>970</y>
+       <width>461</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(245,245,245);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;</string>
+     </property>
+     <property name="text">
+      <string>直博保研热力图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>1400</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>直博保研相关要素热力图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>1400</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>出国留学相关要素热力图</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1430</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PGEAnalysis">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1450</y>
+       <width>250</width>
+       <height>250</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>考研相关要素热力图分析
+
+最有可能影响上岸的特征是考研总分
+数学分数、超过国家线及院线的分数
+
+影响相对较小的特征是本科院校级别
+本科的平均绩点、四六级成绩</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PRAnalysis">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>1450</y>
+       <width>250</width>
+       <height>250</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>保研直博相关要素热力图分析
+
+最有可能影响保送的特征是学校等级
+研习经历
+
+影响相对较小的特征是自身意愿和是
+否有学术产物</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SAAnalysis">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>1450</y>
+       <width>250</width>
+       <height>250</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>留学相关要素热力图分析
+
+最有可能影响留学的特征是GRE
+平均绩点、TOEFL成绩
+
+影响相对较小的特征是推荐信力度
+自身意愿、是否有学术成就</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1730</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PGEAPic">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1760</y>
+       <width>481</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(85,179,236);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>考研最相关要素点状图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PGEAPicA">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>1860</y>
+       <width>401</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>数学分数在考研总分的地位至关重要
+
+数学分数越高，总分越高，两者相关性很大</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SAAPic">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>2100</y>
+       <width>481</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(85,179,236);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>出国最相关要素点状图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SAAPicA">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>2200</y>
+       <width>401</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>留学深造方面
+
+GPA平均绩点越高，留学深造的意愿更强</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PRAPic">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2440</y>
+       <width>481</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(85,179,236);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+</string>
+     </property>
+     <property name="text">
+      <string>直博最相关要素点状图</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SPRAPicA">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>2530</y>
+       <width>401</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>直博保研方面
+
+大多数保送成功的学生都有做项目和实习的经验</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2780</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2810</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:30px;font:bold;</string>
+     </property>
+     <property name="text">
+      <string>算法展示</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3130</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>线性回归算法</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LRShowPic">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2860</y>
+       <width>441</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RFShowPic">
+     <property name="geometry">
+      <rect>
+       <x>599</x>
+       <y>2869</y>
+       <width>391</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/6.png);
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>3130</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>随机森林分类算法</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RF">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>3170</y>
+       <width>401</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);
+</string>
+     </property>
+     <property name="text">
+      <string>随机森林最早由Leo Breiman和Adele Cutler提出
+指的是利用多棵树对样本进行训练并预测的一种分类器</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LR">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3170</y>
+       <width>401</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>线性回归是利用数理统计中回归分析
+来确定两种或两种以上变量间相互依赖的定量关系的一种分析方法</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3280</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3310</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:30px;font:bold;</string>
+     </property>
+     <property name="text">
+      <string>功能简介</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CJYCJJ">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>3380</y>
+       <width>271</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>成绩预测功能简介
+
+通过输入与预测科目相关的分数
+使用线性回归模型结合数据库样本进行预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="KYFXJJ">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>3380</y>
+       <width>271</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>考研分析功能简介
+
+展示分析与考研紧密相关的一些特征及关系
+使用随机森林分类模型结合分数线等基本
+信息进行上岸预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CGFXJJ">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>3600</y>
+       <width>271</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>留学分析功能简介
+
+展示分析与留学紧密相关的一些特征及关系
+使用随机森林分类模型结合GPA等基本
+信息对是否能够取得offer进行预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BSFXJJ">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>3600</y>
+       <width>271</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>保送分析功能简介
+
+展示分析与直博保研紧密相关的一些基本特征及关系
+使用随机森林分类模型结合当前绩点等基本
+信息对是否能够保送进行预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="KYFX">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>3400</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(81,170,236);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;
+</string>
+     </property>
+     <property name="text">
+      <string>考研分析 </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="BSFX">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>3620</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(81,170,236);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;
+</string>
+     </property>
+     <property name="text">
+      <string>保送分析 </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CGFX">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3620</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(81,170,236);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;
+</string>
+     </property>
+     <property name="text">
+      <string>留学分析 </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="CJYC">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3400</y>
+       <width>101</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(81,170,236);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;
+</string>
+     </property>
+     <property name="text">
+      <string>成绩预测 </string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>3560</y>
+       <width>271</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>3560</y>
+       <width>271</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3780</y>
+       <width>941</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LRShowPic_2">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>2860</y>
+       <width>441</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:1px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RFShowPic_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>2870</y>
+       <width>401</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/7.png);
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(85,179,236);font-size:10px;background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string>热力图</string>
+     </property>
+    </widget>
+    <zorder>LRShowPic_2</zorder>
+    <zorder>label</zorder>
+    <zorder>line</zorder>
+    <zorder>HeatmapLable</zorder>
+    <zorder>PGEHTMTEXT</zorder>
+    <zorder>SAHeatmapLable</zorder>
+    <zorder>DHeatmapLable</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>line_2</zorder>
+    <zorder>PGEAnalysis</zorder>
+    <zorder>PRAnalysis</zorder>
+    <zorder>SAAnalysis</zorder>
+    <zorder>line_3</zorder>
+    <zorder>PGEAPic</zorder>
+    <zorder>PGEAPicA</zorder>
+    <zorder>SAAPic</zorder>
+    <zorder>SAAPicA</zorder>
+    <zorder>PRAPic</zorder>
+    <zorder>SPRAPicA</zorder>
+    <zorder>line_4</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>LRShowPic</zorder>
+    <zorder>label_8</zorder>
+    <zorder>RF</zorder>
+    <zorder>LR</zorder>
+    <zorder>line_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>CJYCJJ</zorder>
+    <zorder>KYFXJJ</zorder>
+    <zorder>CGFXJJ</zorder>
+    <zorder>BSFXJJ</zorder>
+    <zorder>KYFX</zorder>
+    <zorder>BSFX</zorder>
+    <zorder>CGFX</zorder>
+    <zorder>CJYC</zorder>
+    <zorder>line_6</zorder>
+    <zorder>line_7</zorder>
+    <zorder>line_8</zorder>
+    <zorder>RFShowPic</zorder>
+    <zorder>RFShowPic_2</zorder>
+    <zorder>label_7</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ICON/Untitled.qrc"/>
+ </resources>
+ <connections/>
+</ui>

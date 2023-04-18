@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1032</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:transparent;
+background-color:white;
+QScrollBar {height:0px;width:0px;}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1032</width>
+      <height>3410</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>871</width>
+      <height>3410</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollBar {height:0px;width:0px;}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:40px;font:bold;</string>
+     </property>
+     <property name="text">
+      <string>保送分析</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>991</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>热力图</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>通过保送要素热力图对保送情况进行初步分析</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>100</y>
+        <width>261</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>保研直博相关要素热力图分析
+
+最有可能影响保送的特征是学校等级
+研习经历
+
+影响相对较小的特征是自身意愿和是
+否有学术产物及本科绩点</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="htmap">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>641</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>730</y>
+       <width>991</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>分数统计</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>各分数段出现频次展示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>150</y>
+        <width>341</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>可以看到，立志于保送的学生
+其深造意向都非常高，大部分都是5
+这是从热力图无法看出来的
+也解释了为什么本组的深造意愿和各特征相关度都较低</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="frc">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>511</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>720</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1200</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_9" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>1210</y>
+       <width>991</width>
+       <height>791</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>关系展示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>展示各要素之间的关系</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>130</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>保送的学生中，优秀的本科院校是至关重要的
+大部分保送学生都是985、211院校出生
+这些优质高校手握更多的保送资格</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>490</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>本科均分在热力图中与成功保送相关度较低
+但仔细分析可以发现
+能够成功保送的本科均分一般都高</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>440</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_12" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>2000</y>
+       <width>991</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>不难看出
+成功保送的学生四级成绩都非常优秀</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>440</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>大多数保送成功的学生都有做项目和实习的经验</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s4">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>390</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>2750</y>
+       <width>991</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>回归模型</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>随机森林分类展示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>480</y>
+        <width>511</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>在训练组样本中，随机森林模型实现了全部正确预测
+在测试组样本中的表现同样优秀</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rf1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>371</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rf2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>80</y>
+        <width>371</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3390</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>2740</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

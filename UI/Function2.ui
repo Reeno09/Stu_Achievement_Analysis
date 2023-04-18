@@ -1,0 +1,2564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1032</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:transparent;
+background-color:white;
+QScrollBar {height:0px;width:0px;}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-1392</y>
+      <width>1032</width>
+      <height>3100</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1032</width>
+      <height>3100</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollBar {height:0px;width:0px;}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:40px;font:bold;</string>
+     </property>
+     <property name="text">
+      <string>成绩预测</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CET4">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>220</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CET6">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>290</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>410</y>
+       <width>113</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color: rgb(242,242,242);border:1px rgb(225, 225, 225);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}
+QPushButton:pressed{background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}</string>
+     </property>
+     <property name="text">
+      <string>提交</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>220</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>请输入CET4成绩:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>290</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>请输入CET6成绩:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>160</y>
+       <width>591</width>
+       <height>341</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(232,85,95);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>200</y>
+       <width>261</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>利用线性回归模型
+
+通过四六级成绩对考研英语进行预测
+
+结果仅供参考</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(232,85,95);font-size:10px;background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string>考研英语预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>391</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+     </property>
+     <property name="text">
+      <string>通过四六级成绩对考研英语成绩进行推算</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>540</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>350</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>请选择本科院校:</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CBOX92">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>360</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>985、211</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CBOXsyl">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>360</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>双一流院校</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CBOXyb">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>360</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>一本院校</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CBOXbk">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>360</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>本科院校</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CBOXzk">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>360</y>
+       <width>87</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>专科院校</string>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9yc">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>550</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(232,85,95);font-size:10px;background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string>考研上岸预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>570</y>
+       <width>391</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+     </property>
+     <property name="text">
+      <string>通过考研成绩结合往年情况进行上岸预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>620</y>
+       <width>971</width>
+       <height>891</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(232,85,95);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>670</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>深造意愿:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="math">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>660</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>670</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>数学分数:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>750</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>英语分数:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>750</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>考研总分:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>830</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>四级分数:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>830</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>六级分数:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>910</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>是否有研习经历:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>910</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);
+</string>
+     </property>
+     <property name="text">
+      <string>是否有学术著作:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>990</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>二战意向:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>990</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>往年国家线:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>1070</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);
+</string>
+     </property>
+     <property name="text">
+      <string>往年院线:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>1070</y>
+       <width>60</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);
+</string>
+     </property>
+     <property name="text">
+      <string>本科绩点:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>1140</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(39,39,39);</string>
+     </property>
+     <property name="text">
+      <string>请选择本科院校:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="score">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>740</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CET4_2">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>820</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="eng">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>740</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="CET6_2">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>820</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cl">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>980</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="gpa">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>1060</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sl">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>1060</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>660</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="szyx1">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>670</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="szyx2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>670</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent</string>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="szyx3">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>670</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent</string>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="szyx4">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>670</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent</string>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="szyx5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>670</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : transparent</string>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="yxjl" native="true">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>900</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <widget class="QRadioButton" name="yyxjl">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>有研习经历</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="wyxjl">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>无研习经历</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ezyx" native="true">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>980</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <widget class="QRadioButton" name="yezyx">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>有二战意向</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="wezyx">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>无二战意向</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="xszz" native="true">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>900</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <widget class="QRadioButton" name="yxszz">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>有学术著作</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="wxszz">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>10</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>无学术著作</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="bkyx" native="true">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>1130</y>
+       <width>691</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <widget class="QRadioButton" name="bk92">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>985、211院校</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="bksyl">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>双一流院校</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="yb">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>一本院校</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="bk">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>30</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>本科院校</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="zk">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>30</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>专科院校</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>1240</y>
+       <width>113</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color: rgb(242,242,242);border:1px rgb(225, 225, 225);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}
+QPushButton:pressed{background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}</string>
+     </property>
+     <property name="text">
+      <string>提交</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="resltky">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>1300</y>
+       <width>531</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+     </property>
+     <property name="text">
+      <string>利用随机森林分类模型
+
+通过相关成绩对考研上岸进行预测
+
+结果仅供参考</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1550</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1560</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(232,85,95);font-size:10px;background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string>留学预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1580</y>
+       <width>391</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+     </property>
+     <property name="text">
+      <string>通过留学相关要素进行预测</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1630</y>
+       <width>971</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(232,85,95);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>401</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>GRE分数:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="gre">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>20</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TOEFL分数:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="toefl">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>本科绩点:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="gpalx">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>100</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>自身意愿:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy1lx">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy2lx">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy3lx">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy4lx">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy5lx">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>451</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>推荐信力度:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="tjx1">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="tjx2">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="tjx3">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="tjx4">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="tjx5">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>180</y>
+        <width>451</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>是否有研习经历:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="yyxjllx">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>有研习经历</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="wyxjllx">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>无研习经历</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_8" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>891</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>请选择本科院校：</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="bkyx_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>691</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+       <widget class="QRadioButton" name="bk92lx">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>985、211院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="bksyllx">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>30</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>双一流院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="bkyblx">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>30</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>一本院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="bklx">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>30</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>本科院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="zklx">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>30</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>专科院校</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>390</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(242,242,242);border:1px rgb(225, 225, 225);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}
+QPushButton:pressed{background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}</string>
+      </property>
+      <property name="text">
+       <string>提交</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resltlx">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>450</y>
+        <width>531</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>利用随机森林分类模型
+
+通过相关成绩进行预测
+
+结果仅供参考</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_9" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2400</y>
+       <width>971</width>
+       <height>651</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:2px solid rgb(232,85,95);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+     </property>
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>401</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>四级分数:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cet4bs">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_11" native="true">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>20</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>六级分数:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cet6bs">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_12" native="true">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>本科绩点:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="gpabs">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_13" native="true">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>100</y>
+        <width>411</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_41">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>自身意愿:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_42">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy1bs">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy2bs">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy3bs">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy4bs">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="zsyy5bs">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>30</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_15" native="true">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>180</y>
+        <width>451</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>是否有研习经历:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_46">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="yyxjlbs">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>有研习经历</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="wyxjlbs">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>无研习经历</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_16" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>270</y>
+        <width>891</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_47">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>请选择本科院校：</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="bkyx_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>691</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+       </property>
+       <widget class="QRadioButton" name="bk92bs">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>985、211院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="bksylbs">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>30</y>
+          <width>111</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>双一流院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="ybbs">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>30</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>一本院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="bkbs">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>30</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>本科院校</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="zkbs">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>30</y>
+          <width>100</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:transparent;border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+        </property>
+        <property name="text">
+         <string>专科院校</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>390</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(242,242,242);border:1px rgb(225, 225, 225);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}
+QPushButton:pressed{background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(232,85,95);}</string>
+      </property>
+      <property name="text">
+       <string>提交</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resltbs">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>450</y>
+        <width>531</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>利用随机森林分类模型
+
+通过在校成绩对保送进行预测
+
+结果仅供参考</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_17" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>451</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;border:transparent</string>
+      </property>
+      <widget class="QLabel" name="label_50">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>是否有学术著作:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_51">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:2px solid rgb(209,207,208);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="yxszzbs">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>有学术著作</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="wxszzbs">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>30</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : transparent</string>
+       </property>
+       <property name="text">
+        <string>无学术著作</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2320</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2330</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(232,85,95);font-size:10px;background-color:transparent;</string>
+     </property>
+     <property name="text">
+      <string>保送预测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_49">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>2350</y>
+       <width>391</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+     </property>
+     <property name="text">
+      <string>通过在校相关要素进行保送预测</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3080</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <zorder>label_4</zorder>
+    <zorder>label</zorder>
+    <zorder>line</zorder>
+    <zorder>CET4</zorder>
+    <zorder>CET6</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_7</zorder>
+    <zorder>line_2</zorder>
+    <zorder>label_8</zorder>
+    <zorder>CBOX92</zorder>
+    <zorder>CBOXsyl</zorder>
+    <zorder>CBOXyb</zorder>
+    <zorder>CBOXbk</zorder>
+    <zorder>CBOXzk</zorder>
+    <zorder>label_9yc</zorder>
+    <zorder>label_10</zorder>
+    <zorder>label_11</zorder>
+    <zorder>label_12</zorder>
+    <zorder>math</zorder>
+    <zorder>label_9</zorder>
+    <zorder>label_13</zorder>
+    <zorder>label_14</zorder>
+    <zorder>label_15</zorder>
+    <zorder>label_16</zorder>
+    <zorder>label_17</zorder>
+    <zorder>label_18</zorder>
+    <zorder>label_19</zorder>
+    <zorder>label_20</zorder>
+    <zorder>label_21</zorder>
+    <zorder>label_22</zorder>
+    <zorder>label_23</zorder>
+    <zorder>score</zorder>
+    <zorder>CET4_2</zorder>
+    <zorder>eng</zorder>
+    <zorder>CET6_2</zorder>
+    <zorder>cl</zorder>
+    <zorder>gpa</zorder>
+    <zorder>sl</zorder>
+    <zorder>label_25</zorder>
+    <zorder>szyx1</zorder>
+    <zorder>szyx2</zorder>
+    <zorder>szyx3</zorder>
+    <zorder>szyx4</zorder>
+    <zorder>szyx5</zorder>
+    <zorder>yxjl</zorder>
+    <zorder>ezyx</zorder>
+    <zorder>xszz</zorder>
+    <zorder>bkyx</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>resltky</zorder>
+    <zorder>line_3</zorder>
+    <zorder>label_24</zorder>
+    <zorder>label_26</zorder>
+    <zorder>widget</zorder>
+    <zorder>widget_9</zorder>
+    <zorder>line_4</zorder>
+    <zorder>label_48</zorder>
+    <zorder>label_49</zorder>
+    <zorder>line_5</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

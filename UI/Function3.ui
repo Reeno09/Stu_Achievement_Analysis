@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1032</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:transparent;
+background-color:white;
+QScrollBar {height:0px;width:0px;}</string>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-3739</y>
+      <width>1032</width>
+      <height>4520</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>871</width>
+      <height>4520</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollBar {height:0px;width:0px;}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:40px;font:bold;</string>
+     </property>
+     <property name="text">
+      <string>考研成绩</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>991</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>热力图</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>431</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>通过考研要素热力图对考研情况进行初步分析</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>100</y>
+        <width>261</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>考研相关要素热力图分析
+
+最有可能影响上岸的特征是考研总分
+数学分数、超过国家线及院线的分数
+
+影响相对较小的特征是本科院校级别
+本科的平均绩点、四六级成绩</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="htmap">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>641</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>730</y>
+       <width>991</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>分数统计</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>各分数段出现频次展示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>150</y>
+        <width>341</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>可以看到，分数在300-350之间的考研学生较多</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="frc">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>511</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>720</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1200</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_9" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>1210</y>
+       <width>991</width>
+       <height>791</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>关系展示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>展示各要素之间的关系</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>130</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>在四级与考研英语的关系中
+通常情况下考研英语高的四级也高
+但是考虑到大部分考生都是在大一大二通过四级
+所以相关性不是特别明显</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>490</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>在六级与考研英语的关系中
+可以看到考研英语高的一般六级分数也高
+且这种相关性比四级更加明显</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>440</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_12" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>2000</y>
+       <width>991</width>
+       <height>731</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>数学分数在考研总分的地位至关重要
+数学分数越高，总分越高，两者相关性很大</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>440</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>依旧可以看出数学分数至关重要
+数学分数越高，上岸概率越大，两者相关性很大</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s4">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>390</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_15" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>2750</y>
+       <width>991</width>
+       <height>721</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>70</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>平均绩点与考研成绩的相关性并不是特别明显
+这也说明本科的学习情况与考研关系不大
+本科成绩不够优秀依旧可以逆风翻盘
+更多的还是看考研所考科目的复习情况</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>430</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>本科绩点与深造意愿呈一定的正相关性</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="s6">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>380</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>3490</y>
+       <width>991</width>
+       <height>1001</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(53,120,246);font-size:10px;background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>回归模型</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:transparent;color:rgb(40,40,40);font-size:20px</string>
+      </property>
+      <property name="text">
+       <string>线性回归与随机森林分类展示</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>130</y>
+        <width>291</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>利用线性回归模型
+根据四六级分数及本科院校
+对考研英语成绩进行一定预测
+可以看到预测结果较为准确</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>860</y>
+        <width>511</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(209, 207, 208);border:1px rgb(209, 207, 208);border-radius:8px;padding:2px 4px;color:rgb(68,68,68);</string>
+      </property>
+      <property name="text">
+       <string>利用随机森林分类模型对能否上岸进行预测，在训练组样本中表现优秀
+在测试数据集中对能够上岸预测准确度较高</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lr">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>491</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rf1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>460</y>
+        <width>371</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rf2">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>460</y>
+        <width>371</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:2px solid rgb(53,120,246);border-radius:8px;
+padding:2px 4px;color:rgb(68,68,68);
+background-color:transparent;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>3480</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>4500</y>
+       <width>971</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(230,230,230);
+max-height:5px;</string>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
